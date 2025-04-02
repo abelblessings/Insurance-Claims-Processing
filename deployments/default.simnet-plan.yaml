@@ -50,6 +50,16 @@ plan:
     - id: 0
       transactions:
         - emulated-contract-publish:
+            contract-name: claim-submission
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/claim-submission.clar
+            clarity-version: 2
+        - emulated-contract-publish:
+            contract-name: payment-processing
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/payment-processing.clar
+            clarity-version: 2
+        - emulated-contract-publish:
             contract-name: policy-management
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/policy-management.clar
